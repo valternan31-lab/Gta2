@@ -1,0 +1,57 @@
+/* 1. Fundo da Página */
+body {
+    background-color: #1a1a1a; /* Cinza escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+/* 2. O Cartão Gamer */
+.cartao {
+    background-color: #2a2a2a;
+    border: 3px solid #2ecc71; /* Verde Gamer */
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    width: 350px; /* Tamanho padrão */
+    box-shadow: 0 0 20px #2ecc71; /* Brilho Neon */
+}
+
+/* 3. Imagem de Perfil */
+.cartao img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a foto redonda */
+    border: 2px solid #2ecc71;
+    margin-bottom: 15px;
+}
+
+/* 4. Estilo dos Botões */
+.botao {
+    display: block;
+    background-color: #2ecc71;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #27ae60;
+    transform: scale(1.05); /* Aumenta um pouco ao passar o mouse */
+}
+
+/* 5. Ajuste para Celulares (O que você já tinha) */
+@media (max-width: 600px) {
+    .cartao {
+        width: 90%; 
+        padding: 20px;
+    }
+}
